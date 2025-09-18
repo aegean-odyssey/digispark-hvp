@@ -61,7 +61,7 @@ I cobbled together the programmer with an Uno R3, a breadboard, and parts I
 happen to have on hand. I put a little extra effort into creating a ribbon
 cable and connectors so I can easily attach the Digispark to the programmer.
 The pics below show an image of the breadboard layout and a photo of the
-completed programmer. The digistpark_hvp is used directly with the Arduino IDE
+completed programmer. The digispark_hvp is used directly with the Arduino IDE
 to program the Digispark and set its fuses. Under the "Tools" menu, "Board"
 is set to ATTinyCore's "ATtiny25/45/85 (No bootloader)" and "Programmer"
 is set to "AVR ISP". A 12vdc power adapter connected to the Uno's barrel jack
