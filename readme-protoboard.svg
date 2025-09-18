@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="7.0in"
+   height="4.8in"
+   viewBox="0 0 350 240"
+   version="1.1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style type="text/css" >
+    <![CDATA[
+           .jumper {
+	       stroke-width: 1.2;
+	       stroke: #900000;
+           }
+	   .buss {
+	       stroke-width: 0.8;
+	       stroke: #bbddbb;
+	   }
+	   .pads {
+	       stroke: none;
+	       fill: #333333;
+	   }
+	   .outline {
+	       stroke-width: 0.2;
+	       stroke: #555555;
+	       fill: #fefefe;
+	   }
+	   path.tags {
+	       stroke-width: 0.4;
+	       stroke: #555555;
+	       fill: #f0f0f0;
+	   }
+	   text {
+	       font-family: sans-serif;
+	       font-size: 6;
+	       fill: #000000;
+	       stroke: none;
+	       text-anchor: middle;
+	   }
+	   text.tag_up, text.tag_dn {
+	       /* text-anchor: middle; */
+	       text-anchor: start;
+	   }
+	   text.tag_up {
+	       /* transform: rotate(-90deg) translate(+27.5,2); */
+	       transform: rotate(-90deg) translate(+11,2); /* +27.5,2 */
+	   }
+	   text.tag_dn {
+	       /* transform: rotate(-90deg) translate(-27.5,2); */
+	       transform: rotate(-90deg) translate(-40,2);
+	   }
+    ]]>
+  </style>'
+  <defs>
+    <rect id="outline" inkscape:label="outline" class="outline" x="0" y="0" width="330" height="220" />
+    <path id="buss_v" inkscape:label="buss_v" class="buss" d="m 0,0 v 40 0 0" />
+    <path id="buss_h" inkscape:label="buss_h" class="buss" d="m 0,0 h 40 0 0" />
+    <circle id="pad" inkscape:label="pad" class="pads" cx="0" cy="0" r="2.0" />
+    <circle id="tie" inkscape:label="tie" class="pads" cx="0" cy="0" r="1.5" />
+    <path id="tag_up" inkscape:label="tag_up" class="tags" d="m 0,-5 l -4,-5 v -35 h 8 v 35 l -4,+5" />
+    <path id="tag_dn" inkscape:label="tag_dn" class="tags" d="m 0,+5 l -4,+5 v 35 h 8 v -35 l -4,-5" />
+  </defs>
+  <g transform="translate(10,10)">
+    <g id="busses" inkscape:groupmode="layer" inkscape:label="busses" sodipodi:insensitive="true" >
+      <use xlink:href="#outline" x="0" y="0" />
+      <use xlink:href="#buss_v" x="020" y="060" />
+      <use xlink:href="#buss_v" x="030" y="060" />
+      <use xlink:href="#buss_v" x="040" y="060" />
+      <use xlink:href="#buss_v" x="050" y="060" />
+      <use xlink:href="#buss_v" x="060" y="060" />
+      <use xlink:href="#buss_v" x="070" y="060" />
+      <use xlink:href="#buss_v" x="080" y="060" />
+      <use xlink:href="#buss_v" x="090" y="060" />
+      <use xlink:href="#buss_v" x="100" y="060" />
+      <use xlink:href="#buss_v" x="110" y="060" />
+      <use xlink:href="#buss_v" x="120" y="060" />
+      <use xlink:href="#buss_v" x="130" y="060" />
+      <use xlink:href="#buss_v" x="140" y="060" />
+      <use xlink:href="#buss_v" x="150" y="060" />
+      <use xlink:href="#buss_v" x="160" y="060" />
+      <use xlink:href="#buss_v" x="170" y="060" />
+      <use xlink:href="#buss_v" x="180" y="060" />
+      <use xlink:href="#buss_v" x="190" y="060" />
+      <use xlink:href="#buss_v" x="200" y="060" />
+      <use xlink:href="#buss_v" x="210" y="060" />
+      <use xlink:href="#buss_v" x="220" y="060" />
+      <use xlink:href="#buss_v" x="230" y="060" />
+      <use xlink:href="#buss_v" x="240" y="060" />
+      <use xlink:href="#buss_v" x="250" y="060" />
+      <use xlink:href="#buss_v" x="260" y="060" />
+      <use xlink:href="#buss_v" x="270" y="060" />
+      <use xlink:href="#buss_v" x="280" y="060" />
+      <use xlink:href="#buss_v" x="290" y="060" />
+      <use xlink:href="#buss_v" x="300" y="060" />
+      <use xlink:href="#buss_v" x="310" y="060" />
+      <use xlink:href="#buss_v" x="020" y="120" />
+      <use xlink:href="#buss_v" x="030" y="120" />
+      <use xlink:href="#buss_v" x="040" y="120" />
+      <use xlink:href="#buss_v" x="050" y="120" />
+      <use xlink:href="#buss_v" x="060" y="120" />
+      <use xlink:href="#buss_v" x="070" y="120" />
+      <use xlink:href="#buss_v" x="080" y="120" />
+      <use xlink:href="#buss_v" x="090" y="120" />
+      <use xlink:href="#buss_v" x="100" y="120" />
+      <use xlink:href="#buss_v" x="110" y="120" />
+      <use xlink:href="#buss_v" x="120" y="120" />
+      <use xlink:href="#buss_v" x="130" y="120" />
+      <use xlink:href="#buss_v" x="140" y="120" />
+      <use xlink:href="#buss_v" x="150" y="120" />
+      <use xlink:href="#buss_v" x="160" y="120" />
+      <use xlink:href="#buss_v" x="170" y="120" />
+      <use xlink:href="#buss_v" x="180" y="120" />
+      <use xlink:href="#buss_v" x="190" y="120" />
+      <use xlink:href="#buss_v" x="200" y="120" />
+      <use xlink:href="#buss_v" x="210" y="120" />
+      <use xlink:href="#buss_v" x="220" y="120" />
+      <use xlink:href="#buss_v" x="230" y="120" />
+      <use xlink:href="#buss_v" x="240" y="120" />
+      <use xlink:href="#buss_v" x="250" y="120" />
+      <use xlink:href="#buss_v" x="260" y="120" />
+      <use xlink:href="#buss_v" x="270" y="120" />
+      <use xlink:href="#buss_v" x="280" y="120" />
+      <use xlink:href="#buss_v" x="290" y="120" />
+      <use xlink:href="#buss_v" x="300" y="120" />
+      <use xlink:href="#buss_v" x="310" y="120" />
+      <use xlink:href="#buss_h" x="025" y="020" />
+      <use xlink:href="#buss_h" x="085" y="020" />
+      <use xlink:href="#buss_h" x="145" y="020" />
+      <use xlink:href="#buss_h" x="205" y="020" />
+      <use xlink:href="#buss_h" x="265" y="020" />
+      <use xlink:href="#buss_h" x="025" y="030" />
+      <use xlink:href="#buss_h" x="085" y="030" />
+      <use xlink:href="#buss_h" x="145" y="030" />
+      <use xlink:href="#buss_h" x="205" y="030" />
+      <use xlink:href="#buss_h" x="265" y="030" />
+      <use xlink:href="#buss_h" x="025" y="190" />
+      <use xlink:href="#buss_h" x="085" y="190" />
+      <use xlink:href="#buss_h" x="145" y="190" />
+      <use xlink:href="#buss_h" x="205" y="190" />
+      <use xlink:href="#buss_h" x="265" y="190" />
+      <use xlink:href="#buss_h" x="025" y="200" />
+      <use xlink:href="#buss_h" x="085" y="200" />
+      <use xlink:href="#buss_h" x="145" y="200" />
+      <use xlink:href="#buss_h" x="205" y="200" />
+      <use xlink:href="#buss_h" x="265" y="200" />
+    </g>
+    <g id="place" inkscape:groupmode="layer" inkscape:label="place" sodipodi:insensitive="true" >
+      <text x="310" y="112" style="text-anchor:end">ATTiny85 High-voltage Programmer</text>
+      <!--
+	  <text x="310" y="108" style="text-anchor:end">ATTiny85 High-voltage Programmer</text>
+	  <text x="310" y="116" style="text-anchor:end">https://github.com/td0g/ArduinoHVP/</text>
+      -->
+      <!-- digistamp connections -->
+      <text x="105" y="010">Digispark PCB</text>
+      <g transform="translate(150,060)">
+        <use xlink:href="#pad"/>
+	<use xlink:href="#tag_up"/>
+	<text class="tag_up">5VDC</text>
+      </g>
+      <g transform="translate(140,060)">
+        <use xlink:href="#pad"/>
+	<use xlink:href="#tag_up"/>
+	<text class="tag_up">GND</text>
+      </g>
+      <g transform="translate(130,060)">
+        <use xlink:href="#pad"/>
+	<use xlink:href="#tag_up"/>
+	<text class="tag_up">Vin (NC)</text>
+      </g>
+      <g transform="translate(110,060)">
+        <use xlink:href="#pad"/>
+	<use xlink:href="#tag_up"/>
+	<text class="tag_up">PB0 / MOSI</text>
+      </g>
+      <g transform="translate(100,060)">
+        <use xlink:href="#pad"/>
+	<use xlink:href="#tag_up"/>
+	<text class="tag_up">PB1 / MISO</text>
+      </g>
+      <g transform="translate(090,060)">
+        <use xlink:href="#pad"/>
+	<use xlink:href="#tag_up"/>
+	<text class="tag_up">PB2 / SCK</text>
+      </g>
+      <g transform="translate(080,060)">
+        <use xlink:href="#pad"/>
+	<use xlink:href="#tag_up"/>
+	<text class="tag_up">PB2 / SCK</text>
+      </g>
+      <g transform="translate(070,060)">
+        <use xlink:href="#pad"/>
+	<use xlink:href="#tag_up"/>
+	<text class="tag_up">PB4 (NC)</text>
+      </g>
+      <g transform="translate(060,060)">
+        <use xlink:href="#pad"/>
+	<use xlink:href="#tag_up"/>
+	<text class="tag_up">PB5 / RES'</text>
+      </g>
+
+      <!-- uno isp connections -->
+      <text x="095" y="215">Arduino Uno ISP</text>
+      <g transform="translate(150,160)">
+        <use xlink:href="#pad"/>
+	<use xlink:href="#tag_dn"/>
+	<text class="tag_dn">D8 (VCC)</text>
+      </g>
+      <g transform="translate(110,160)">
+        <use xlink:href="#pad"/>
+	<use xlink:href="#tag_dn"/>
+	<text class="tag_dn">D9 (SDI)</text>
+      </g>
+      <g transform="translate(100,160)">
+        <use xlink:href="#pad"/>
+	<use xlink:href="#tag_dn"/>
+	<text class="tag_dn">D10 (SII)</text>
+      </g>
+      <g transform="translate(090,160)">
+        <use xlink:href="#pad"/>
+	<use xlink:href="#tag_dn"/>
+	<text class="tag_dn">D11 (SDO)</text>
+      </g>
+      <g transform="translate(080,160)">
+        <use xlink:href="#pad"/>
+	<use xlink:href="#tag_dn"/>
+	<text class="tag_dn">D12 (SCI)</text>
+      </g>
+      <g transform="translate(060,160)">
+        <use xlink:href="#pad"/>
+	<use xlink:href="#tag_dn"/>
+	<text class="tag_dn">Vin (12V)</text>
+      </g>
+      <g transform="translate(050,160)">
+        <use xlink:href="#pad"/>
+	<use xlink:href="#tag_dn"/>
+	<text class="tag_dn">D13 (RES)</text>
+      </g>
+      <g transform="translate(040,160)">
+        <use xlink:href="#pad"/>
+	<use xlink:href="#tag_dn"/>
+	<text class="tag_dn">GND</text>
+      </g>
+
+      <!-- transistor -->
+      <line x1="40" y1="80" x2="60" y2="80" style="stroke:#900000;stroke-width:1"/>
+      <path d="M 50,80 m -3.535,3.535 a 5 5 0 1 1 7.7,0 z"
+	    style="fill:#cccccc;fill-opacity:1;stroke:none" />
+      <use xlink:href="#tie" x="060" y="080" />
+      <use xlink:href="#tie" x="050" y="080" />
+      <use xlink:href="#tie" x="040" y="080" />
+      <text x="060" y="87">c</text>
+      <text x="050" y="87">b</text>
+      <text x="040" y="87">e</text>
+      <text x="030" y="77">2N3904</text>
+
+      <!-- resistor -->
+      <line x1="090" y1="090" x2="090" y2="140" style="stroke:#900000;stroke-width:1" />
+      <line x1="090" y1="105" x2="090" y2="125" style="stroke:#cccccc;stroke-width:5" />
+      <use xlink:href="#tie" x="090" y="090" />
+      <use xlink:href="#tie" x="090" y="140" />
+      <text x="090" y="115">1k</text>
+
+      <!-- resistor -->
+      <line x1="060" y1="090" x2="060" y2="140" style="stroke:#900000;stroke-width:1" />
+      <line x1="060" y1="105" x2="060" y2="125" style="stroke:#cccccc;stroke-width:5" />
+      <use xlink:href="#tie" x="060" y="090" />
+      <use xlink:href="#tie" x="060" y="140" />
+      <text x="060" y="120">1k</text>
+
+      <!-- resistor -->
+      <line x1="050" y1="090" x2="050" y2="140" style="stroke:#900000;stroke-width:1" />
+      <line x1="050" y1="105" x2="050" y2="125" style="stroke:#cccccc;stroke-width:5" />
+      <use xlink:href="#tie" x="050" y="090" />
+      <use xlink:href="#tie" x="050" y="140" />
+      <text x="050" y="113">10k</text>
+
+      <!-- jumper -->
+      <line class="jumper" x1="040" y1="070" x2="140" y2="070" />
+      <use xlink:href="#tie" x="040" y="070" />
+      <use xlink:href="#tie" x="140" y="070" />
+
+      <!-- jumper -->
+      <line class="jumper" x1="040" y1="100" x2="040" y2="120" />
+      <use xlink:href="#tie" x="040" y="100" />
+      <use xlink:href="#tie" x="040" y="120" />
+
+      <!-- jumper -->
+      <line class="jumper" x1="080" y1="100" x2="080" y2="120" />
+      <use xlink:href="#tie" x="080" y="100" />
+      <use xlink:href="#tie" x="080" y="120" />
+
+      <!-- jumper -->
+      <line class="jumper" x1="100" y1="100" x2="100" y2="120" />
+      <use xlink:href="#tie" x="100" y="100" />
+      <use xlink:href="#tie" x="100" y="120" />
+
+      <!-- jumper -->
+      <line class="jumper" x1="110" y1="100" x2="110" y2="120" />
+      <use xlink:href="#tie" x="110" y="100" />
+      <use xlink:href="#tie" x="110" y="120" />
+
+      <!-- jumper -->
+      <line class="jumper" x1="150" y1="100" x2="150" y2="120" />
+      <use xlink:href="#tie" x="150" y="100" />
+      <use xlink:href="#tie" x="150" y="120" />
+    </g>
+  </g>
+</svg>
