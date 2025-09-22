@@ -84,35 +84,31 @@ static void cfc_program_mode(void)
         hvpProgramMode();
     }
 }
-
-static void cfc_menu(void)
-{
-    cfc_puts(F("\n  DEVICE "));
-    cfc_putx(F(" "), cfc_state.devid0);
-    cfc_putx(F(" "), cfc_state.devid1);
-    cfc_putx(F(" "), cfc_state.devid2);
-    cfc_putln(F(""));
-    cfc_puts(F("  Fuse"));
-    cfc_putx(F(" lo:"), cfc_state.o.fuselo);
-    cfc_putx(F(" hi:"), cfc_state.o.fusehi);
-    cfc_putx(F(" ex:"), cfc_state.o.fuseex);
-    cfc_putx(F("  Lock:"), cfc_state.o.lockxx);
-    cfc_putln(F(""));
-    cfc_puts(F("  ----"));
-    cfc_putx(F(" -- "), cfc_state.n.fuselo);
-    cfc_putx(F(" -- "), cfc_state.n.fusehi);
-    cfc_putx(F(" -- "), cfc_state.n.fuseex);
-    cfc_putx(F("  ---- "), cfc_state.n.lockxx);
-    cfc_putln(F(""));
-    cfc_puts(F("(p)reset (i)nput (r)ead (w)rite (e)rase (q)uit: "));
-}    
                     
 void custom_fuse_cmd(void)
 {
     cfc_state.flags = 0;
     while(! (cfc_state.flags & 0x80)) {
 
-        cfc_menu();
+        cfc_puts(F("\n  DEVICE "));
+        cfc_putx(F(" "), cfc_state.devid0);
+        cfc_putx(F(" "), cfc_state.devid1);
+        cfc_putx(F(" "), cfc_state.devid2);
+        cfc_putln(F(""));
+        cfc_puts(F("  Fuse"));
+        cfc_putx(F(" lo:"), cfc_state.o.fuselo);
+        cfc_putx(F(" hi:"), cfc_state.o.fusehi);
+        cfc_putx(F(" ex:"), cfc_state.o.fuseex);
+        cfc_putx(F("  Lock:"), cfc_state.o.lockxx);
+        cfc_putln(F(""));
+        cfc_puts(F("  ----"));
+        cfc_putx(F(" -- "), cfc_state.n.fuselo);
+        cfc_putx(F(" -- "), cfc_state.n.fusehi);
+        cfc_putx(F(" -- "), cfc_state.n.fuseex);
+        cfc_putx(F("  ---- "), cfc_state.n.lockxx);
+        cfc_putln(F(""));
+        cfc_puts(F("(p)reset (i)nput (r)ead (w)rite (e)rase (q)uit: "));
+
         switch(cfc_getch()) {
         case 'r':
             cfc_puts(F("read\nReload device info, fuse and lock bits? (y|n): "));
@@ -127,10 +123,6 @@ void custom_fuse_cmd(void)
             cfc_state.o.lockxx = hvpRdLockBits();
             cfc_state.flags |= 0x10;
             cfc_putln(F("completed"));
-            break;
-
-        __cancel:
-            cfc_putln(F("canceled"));
             break;
 
         case 'w':
@@ -201,7 +193,7 @@ void custom_fuse_cmd(void)
             cfc_state.flags |= 0xf;
             cfc_putln(F("completed"));
             break;
-            
+
         case 'e':
             cfc_puts(F("erase\nErase the chip's flash and eeprom? (y|n): "));
             if (cfc_getch() != 'y') goto __cancel;
@@ -222,11 +214,15 @@ void custom_fuse_cmd(void)
             cfc_state.flags |= 0xf;
             cfc_putln(F("entered"));
             break;
-            
+
         case 'q':
             cfc_puts(F("quit\nExit? (y|n): "));
             if (cfc_getch() != 'y') goto __cancel;
             cfc_state.flags |= 0x80;
+            break;
+
+        __cancel:
+            cfc_putln(F("canceled"));
         }
     }
     hvpStandbyMode();
