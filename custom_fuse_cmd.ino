@@ -128,25 +128,25 @@ void custom_fuse_cmd(void)
         case 'w':
             cfc_puts(F("write\nProgram modified fuse and lock bits? (y|n): "));
             if (cfc_getch() != 'y') goto __cancel;
-            if ((cfc_state.flags & 0x18) &&
+            if (((cfc_state.flags & 0x18) == 0x18) &&
                 (cfc_state.o.fuselo != cfc_state.n.fuselo)) {
                 hvpWrFuseBitsLO(cfc_state.n.fuselo);
                 cfc_state.o.fuselo = hvpRdFuseBitsLO();
                 cfc_state.flags &= ~8;
             }
-            if ((cfc_state.flags & 0x14) &&
+            if (((cfc_state.flags & 0x14) == 0x14) &&
                 (cfc_state.o.fusehi != cfc_state.n.fusehi)) {
                 hvpWrFuseBitsHI(cfc_state.n.fusehi);
                 cfc_state.o.fusehi = hvpRdFuseBitsHI();
                 cfc_state.flags &= ~4;
             }
-            if ((cfc_state.flags & 0x12) &&
+            if (((cfc_state.flags & 0x12) == 0x12) &&
                 (cfc_state.o.fuseex != cfc_state.n.fuseex)) {
                 hvpWrFuseBitsEX(cfc_state.n.fuseex);
                 cfc_state.o.fuseex = hvpRdFuseBitsEX();
                 cfc_state.flags &= ~2;
             }
-            if ((cfc_state.flags & 0x11) &&
+            if (((cfc_state.flags & 0x11) == 0x11) &&
                 (cfc_state.o.lockxx != cfc_state.n.lockxx)) {
                 hvpWrLockBits(cfc_state.n.lockxx);
                 cfc_state.o.lockxx = hvpRdLockBits();
