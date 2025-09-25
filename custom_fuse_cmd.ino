@@ -1,6 +1,6 @@
 /* INTERACTIVE COMMANDS
    read device id, chip erase, read/write fuse bytes and lock bits
-   
+
    AUTHOR
    Demitrios V. (GitHub @aegean-odyssey)
 
@@ -8,7 +8,7 @@
    digispark-hvp, copyright © 2025 by Aegean Associates Inc., is licensed under
    Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International. To
    view a copy of this license, visit
-    https://creativecommons.org/licenses/by-nc-sa/4.0/ 
+    https://creativecommons.org/licenses/by-nc-sa/4.0/
 */
 
 extern "C" {
@@ -84,7 +84,7 @@ static void cfc_program_mode(void)
         hvpProgramMode();
     }
 }
-                    
+
 void custom_fuse_cmd(void)
 {
     cfc_state.flags = 0;
@@ -173,14 +173,16 @@ void custom_fuse_cmd(void)
                 cfc_putln((const __FlashStringHelper *) (p->note));
             }
             cfc_putln(F("x Cancel"));
-            cfc_puts(F("Preset selection? "));
+            cfc_puts(F("Preset selection? ("));
             if (i > 0) {
-                cfc_puts(F("(0-"));
-                cfc_putd(i-1);
-                cfc_puts(F("|x): "));
-            } else {
-                cfc_puts(F("(x) :"));
+                cfc_putd(0);
+                if (i > 1) {
+                    cfc_puts(F("-"));
+                    cfc_putd(i-1);
+                }
+                cfc_puts(F("|"));
             }
+            cfc_puts(F("x): "));
             c = cfc_getch();
             if (c < '0' || c > (i + '0')) goto __cancel;
             c -= '0';
@@ -205,6 +207,7 @@ void custom_fuse_cmd(void)
 
         case 'i':
             cfc_puts(F("input\nEnter hex values (xx xx xx xx): "));
+            //*!* NOTE assumptions about byte-order and alignment
             union {uint32_t l; struct {uint8_t a, b, c, d;};} u;
             if (! ((u.l = cfc_getlx()) > 0)) goto __cancel;
             cfc_state.n.fuselo = u.d;
